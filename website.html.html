@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link href='https://fonts.googleapis.com/css?family=Patrick Hand' rel='stylesheet'> 
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">       <title>Neira D'Souza Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <style>
+            .bod{
+                background-color: rgba(234, 240, 236, 0.849);
+                height: 2000px;
+                margin: 0;
+            }
+            .div{
+                background-color: rgba(196, 217, 201, 0.649);
+                display:flex;
+                justify-content:space-between;
+                flex-wrap: wrap;
+                border-radius: 10px;
+            }
+            .h1{
+                font-family:Caveat;
+                font-size:35px;
+                color: black;
+                text-align: left;
+                justify-content:left;
+                padding:20px;
+            }
+            .cont{
+                font-family:Caveat;
+                font-size:20px;
+                color: black;
+                text-align: left;
+                justify-content:right;
+                padding:20px;
+                gap: 20px;
+                display:flex;
+                justify-content:space-between;
+                flex-wrap: wrap;
+            }
+            .cont button{
+                background-color: transparent;
+                border-color: transparent;
+                font-family: Caveat;
+                font-size: 35px;
+                height: 50px;
+                padding-top: 20px;
+                font-weight: 200;
+                cursor: pointer;
+            }
+            .cont button:hover{
+                color:rgba(30, 112, 49, 0.649);
+            }
+            h1{
+                text-align: center;
+                font-family:Patrick Hand;
+                font-size: 50px;
+            }
+            h3{
+                text-align: center;
+                font-family:Patrick Hand;
+                font-size: 25px;
+                font: weight normal;
+                color: rgba(0, 0, 0, 0.649) ;
+                margin-top:20px;
+                padding-left:50px;
+                padding-right:50px;
+            }
+            .design{
+                background-color:rgba(32, 123, 53, 0.649) ;
+                display: flex;
+                justify-content: center;
+                margin-left: 620px;
+                width: 100px;
+                height: 8px;
+                border-radius: 20px;
+                
+            }
+            .containers{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 0px;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 20px;
+            }
+            .container a{
+                display:inline-block;
+            }
+            .container img:hover{
+                transform: scale(1.2);
+ 
+            }
+            .p{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 5px;
+            }
+            .div2{
+                background-color: rgba(201, 219, 205, 0.649);
+            }
+            .card-container {
+                display: flex;
+                justify-content: center;  /* or space-between / space-around */
+                gap: 20px;
+                flex-wrap: wrap; /* allows wrapping on smaller screens */
+                padding: 20px;
+            }
+
+            .cards{
+                background-color: rgba(196, 217, 201, 0.649);
+                border-color: rgb(74, 147, 75);
+                box-shadow: 10px;
+                border-radius: 10px;
+                width:300px;
+                height:350px;
+                cursor: pointer;
+                
+            }
+            .cards:hover{
+                     transform: scale(1.1);
+            }
+            .cards img{
+                height:180px;
+                width:auto;
+                object-fit: cover;
+                /* border-radius: 20px; */
+                padding-top: 10px;
+                /* spadding-left: 10px; */
+                
+            }
+            .project-cont{
+                font-size: 20px;
+                font-weight: 100px;
+                font-family:Caveat;
+                padding-left: 10px;
+                padding-right:8px;
+                display: flex;
+                justify-content: center;
+            }
+            .project-h1{
+                font-size: 25px;
+                font-weight: 100px;
+                font-family:Caveat;
+                display: flex;
+                justify-content: center;
+                color: rgba(46, 39, 28, 0.57);
+            }
+            .scroll-container {
+                display: flex;
+                overflow-x: auto;
+                gap: 20px;
+                padding: 20px;
+                scrollbar-width: thin; /* For Firefox */
+            }
+
+            .scroll-container::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            .scroll-container::-webkit-scrollbar-thumb {
+                background-color: rgba(100, 100, 100, 0.4);
+                border-radius: 10px;
+            }
+            .skills{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 20px;
+            }
+            .scroll-top{
+                position: fixed;
+                bottom: 30px;
+                left: 90%;
+                flex-wrap: wrap; */
+                transform: translateX(90%);
+                padding: 10px 12px;
+                background-color: #6EA086;
+                color: white;
+                border: none;
+                border-radius: 25px;
+                font-size: 16px;
+                cursor: pointer;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                z-index: 1000;
+                border-radius: 50%;
+            }
+
+        </style>
+    </head>
+    <body class="bod">
+        <a href="#start"><button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'});" class="scroll-top"><img src="up-button.svg" style="height:35px;"></button></a>
+
+        
+        <div class="div" id="start">
+            <h1 class="h1"><strong>Neira D'Souza</strong></h1>
+            <div class="cont"> 
+                <a href="#about" ><button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});">About</button></a>
+                <a href="#projects"><button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'});">Projects</button></a>
+                <a href="#skills-id"><button onclick="document.getElementById('skills-id).scrollIntoView({behavior:'smooth'});">Skills</button></a>
+            </div>
+        </div> 
+        <h1 ><strong>Hi World, I'm Neira</strong></h1>
+        <p class="containers"id="about">
+            <img src="line.PNG" alt="line">
+        </p>
+        <p class="container">
+            <img src="profilee.png" alt="Profile" >
+        </p>
+        <h3>Hey! I'm Neira, currently studying Computer Science at VIT Chennai. I am extremely enthusiastic about software development and UI/UX design.I am well equipped with creativity and an eager enthusiasm to learn.</h3>
+        <a></a>
+        <h3> Apart from career and academics, I enjoy playing basketball, swimming, watercolour painting and reading.</h3>
+        <p class="container">   
+            <a href="https://www.linkedin.com/in/neira-dsouza/">
+                <img border="0" alt="linkedin" src="linkedin.png" width="50" height="50">
+            </a>
+            <a href="https://www.instagram.com/neira_dsouza/">
+                <img class="img" border="0" alt="insta" src="insta.png" width="50" height="50">
+            </a>
+            <a href="https://github.com/Neira-Dsouza">
+                <img class="img" border="0" alt="insta" src="github.png" width="50" height="50">
+            </a>
+        </p> 
+            <h1 style="font-family:Patrick Hand;
+                font-size:40px;
+                color: black;
+                display: flex;
+                justify-content:center;
+                padding:20px;"
+                id="projects">
+                Projects
+            </h1>
+            <h1 style="font-family: Caveat; font-size: 50px;color: rgb(21, 100, 59);">JavaScript</h1>
+            <div class="card-container scroll-container">
+                <div class="cards">
+                    <a href="https://github.com/Neira-Dsouza/To-do-List">
+                        <img src="to-do-list.PNG" style="width:280px; padding-right: 10px; padding-left: 10px; border-radius: 10px;">
+                        <h2 class="project-cont"> The To-Do List is built for dynamic task management. It allows users to add and delete tasks interactively in real-time.
+                        </h2>
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="https://github.com/Neira-Dsouza/weather-app">
+                        <img src="weather-app.PNG" style="height:180px; width:180px; padding-left: 55px;">
+                        <h2 class="project-cont">The Weather Prediction App fetches real-time weather data using a public API and displays temperature and location-based forecasts.
+                        </h2>
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="https://github.com/Neira-Dsouza/Quote-Generator">
+                        <img src="quotes.png" style="padding-left: 30px;">
+                        <h2 class="project-cont"> The Quote Generator displays a new random quote each time you click a button perfect for daily inspiration.
+
+                        </h2>
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="https://github.com/Neira-Dsouza/Pomodoro-Timer-">
+                        <img src="pomodoro-img.png" style="padding-left: 7px;">
+                        <h2 class="project-cont"> The Pomodoro Timer boosts productivity by breaking work into 25-minute focus sessions followed by short breaks with calming lofi background. 
+                        </h2>
+                    </a>
+                </div>
+            </div>
+            <h1 style="padding-top: 150px;" id="skills-id">Skills</h1>
+            <p class="skills" style="padding-bottom: 250px;"> 
+                <img src="c++.png"  style="height: 55px;">
+                <img src="c.png" style="height: 55px;">
+                <img src="figma.png" style="height: 55px;">
+                <img src="python.png" style="height: 55px;">
+                <img src="html.png" style="height: 55px;">
+                <img src="js.svg" style=" height:60px;width: auto;">
+            </p>
+            
+    </body>
+   
+</html>
